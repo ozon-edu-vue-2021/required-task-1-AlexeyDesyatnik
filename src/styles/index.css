@@ -63,7 +63,7 @@ main {
 }
 
 /* Images style */
-.content {
+.images.content {
   position: relative;
   padding: 20px;
   margin-bottom: 20px;
@@ -72,7 +72,7 @@ main {
   min-height: 400px;
 }
 
-a {
+.images a {
   display: inline-block;
   border-radius: 6px;
   overflow: hidden;
@@ -80,15 +80,15 @@ a {
   min-height: 100px;
 }
 
-a:nth-child(n) {
+.images a:nth-child(n) {
   background-color: #efebe9;
 }
 
-a:nth-child(2n) {
+.images a:nth-child(2n) {
   background-color: #d7ccc8;
 }
 
-a:nth-child(3n) {
+.images a:nth-child(3n) {
   background-color: #bcaaa4;
 }
 
