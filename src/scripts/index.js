@@ -159,8 +159,7 @@ const togglePopup = function() {
  */
 const actionHandler = function(evt) {
   evt.preventDefault();
-  const nextPage = evt.currentTarget.dataset.page;
-  evt.currentTarget.dataset.page = nextPage + 1;
+  const nextPage = Number(evt.currentTarget.dataset.page);
 
   if (nextPage > MAX_PAGE_IMAGES) {
     console.warn(
@@ -168,6 +167,7 @@ const actionHandler = function(evt) {
     );
     evt.currentTarget.disabled = true;
   } else {
+    evt.currentTarget.dataset.page = nextPage + 1;
     getPictures(nextPage);
   }
 };
