@@ -180,9 +180,9 @@ const actionHandler = function(evt) {
  */
 const imageHandler = function(evt) {
   evt.preventDefault();
-
-  if (evt.target.closest("a")) {
-    getPictureInfo(evt.target.dataset.id);
+  const imageLink = evt.target.closest("a");
+  if (imageLink) {
+    getPictureInfo(imageLink.dataset.id);
   }
 };
 
