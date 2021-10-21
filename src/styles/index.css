@@ -40,7 +40,7 @@ main {
   max-width: 1400px;
   min-height: 100%;
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-direction: column;
   padding: 50px;
   background-color: #fff;
