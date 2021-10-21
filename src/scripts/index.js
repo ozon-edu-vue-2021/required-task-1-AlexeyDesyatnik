@@ -15,7 +15,7 @@ let loaderTimeout;
 
 /**
  * Функция задаёт первоначальное состояние страницы.
- * Отправляется первый запрос за картинками, юез параметров т.к. с дефолтными настройками.
+ * Отправляется первый запрос за картинками, без параметров т.к. с дефолтными настройками.
  */
 const initialState = function() {
   action.disabled = false;
@@ -57,7 +57,7 @@ const getPictureInfo = function(id = 0) {
 
 /**
  * Функция показывает индикатор загрузки.
- * Меняет ситили, ничего не возвращает.
+ * Меняет стили, ничего не возвращает.
  */
 const showLoader = function() {
   loader.style.visibility = "visible";
@@ -143,7 +143,7 @@ const renderPopupPicture = function(picture) {
 };
 
 /**
- * Функция переклбчает класс открытия на попапе
+ * Функция переключает класс открытия на попапе
  */
 const togglePopup = function() {
   popup.classList.toggle("open");
